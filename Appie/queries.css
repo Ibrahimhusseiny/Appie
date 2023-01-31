@@ -1,0 +1,174 @@
+@media (max-width: 34em) {
+  html {
+    /*to make 1rem = 10px*/
+    font-size: 50%;
+  }
+  .grid--2,
+  .grid--3,
+  .grid--4,
+  .grid--5 {
+    grid-template-columns: 1fr;
+  }
+  .hero-sectin {
+    margin-top: 0;
+    text-align: center;
+    padding: 3.2rem;
+  }
+  .hero-img-box {
+    width: 60%;
+    justify-self: right;
+    align-self: bottom;
+    margin: 0 -3.2rem -3.2rem 0;
+  }
+  .feedback,
+  .email-box {
+    margin-left: 3.2rem;
+  }
+  .how-head {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    text-align: center;
+    gap: 2.4rem;
+  }
+  .how-fast {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-thumb {
+    display: none;
+  }
+  .wherever-text {
+    text-align: center;
+  }
+  .watch-direction {
+    display: none;
+  }
+  .store-container {
+    width: 100%;
+  }
+  .review-container {
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+    text-align: center;
+    padding: 4.8rem;
+  }
+  .name-buttons {
+    justify-content: center;
+  }
+  .review-btn {
+    display: none;
+  }
+  .row-1,
+  .row-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .last-logo {
+    grid-column: 2/3;
+    justify-self: center;
+  }
+  .wherever-features {
+    justify-items: center;
+  }
+  .wherever-img {
+    display: flex;
+    justify-content: center;
+  }
+  .install-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+  }
+  .install-div {
+    width: 100%;
+  }
+  .footer-columns {
+    justify-items: center;
+  }
+  .wordpress {
+    text-align: center;
+  }
+  .readmore,
+  .social {
+    justify-content: center;
+  }
+  .column-head {
+    text-align: center;
+  }
+  .work-video {
+    background-image: url(images/video-thumb-1.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 35rem;
+  }
+  .watch-text {
+    margin: 0 2.4rem;
+  }
+  .support li,
+  .company li,
+  .communication li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer {
+    padding-bottom: 9.6rem;
+  }
+  .footer-download {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    margin-left: 15rem;
+  }
+
+  .nav-list {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav {
+    position: relative;
+  }
+  .nav-list {
+    /* opacity: 1; */
+    pointer-events: none;
+    visibility: visible;
+  }
+  .btn-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .btn-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
